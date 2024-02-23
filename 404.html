@@ -1,0 +1,30 @@
+<!-- 404.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const currentPath = window.location.pathname;
+    const haxzuEmbedUrl = `https://haxzu.io${currentPath}`;
+    document.body.innerHTML = `<iframe src="${haxzuEmbedUrl}" frameborder="0"></iframe>`;
+  </script>
+</body>
+</html>
